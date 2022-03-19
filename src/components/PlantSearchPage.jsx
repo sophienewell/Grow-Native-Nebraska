@@ -215,16 +215,17 @@ function PlantSearchPage() {
 
   return (
     <div>
-      <h5>
+      <h5 className="center">
         Use the filters to find native plants that are suitable for your garden
       </h5>
-      <form>
+      <form className="center margin-10">
         <div>
           <label htmlFor="sunAmount">Sun</label>
           <select
             id="sunAmount"
             value={sunAmount}
             onChange={(e) => setSunAmount(e.target.value)}
+            className="margin-10"
           >
             <option value="all">All</option>
             <option value="fullSun">Full sun</option>
@@ -237,6 +238,7 @@ function PlantSearchPage() {
             id="soilType"
             value={soilType}
             onChange={(e) => setSoilType(e.target.value)}
+            className="margin-10"
           >
             <option value="all">All</option>
             <option value="wet">Wet</option>
@@ -249,6 +251,7 @@ function PlantSearchPage() {
             id="bloomTime"
             value={bloomTime}
             onChange={(e) => setBloomTime(e.target.value)}
+            className="margin-10"
           >
             <option value="all">All</option>
             <option value="spring">Spring</option>
@@ -261,6 +264,7 @@ function PlantSearchPage() {
             id="color"
             value={color}
             onChange={(e) => setColor(e.target.value)}
+            className="margin-10"
           >
             <option value="all">All</option>
             <option value="yellow">Yellow</option>
@@ -276,6 +280,7 @@ function PlantSearchPage() {
             id="height"
             value={height}
             onChange={(e) => setHeight(e.target.value)}
+            className="margin-10"
           >
             <option value="all">All</option>
             <option value="groundCover">Ground cover</option>
@@ -285,68 +290,70 @@ function PlantSearchPage() {
           </select>
         </div>
       </form>
-      {plantList
-        //filter by sun amount
-        .filter((val) => {
-          if (sunAmount === "fullSun") {
-            return val.sun === "Full sun";
-          } else if (sunAmount === "partSun") {
-            return val.sun === "Partial sun";
-          } else if (sunAmount === "fullShade") {
-            return val.sun === "Full shade";
-          } else return val;
-        })
-        //filter by soil type
-        .filter((val) => {
-          if (soilType === "wet") {
-            return val.soiltype === "Wet";
-          } else if (soilType === "medium") {
-            return val.soiltype === "Medium";
-          } else if (soilType === "dry") {
-            return val.soiltype === "Dry";
-          } else return val;
-        })
-        //filter by bloom time
-        .filter((val) => {
-          if (bloomTime === "spring") {
-            return val.bloomTime === "Spring";
-          } else if (bloomTime === "summer") {
-            return val.bloomTime === "Summer";
-          } else if (bloomTime === "fall") {
-            return val.bloomTime === "Fall";
-          } else return val;
-        })
-        //filter by flower color
-        .filter((val) => {
-          if (color === "yellow") {
-            return val.color === "Yellow";
-          } else if (color === "white") {
-            return val.color === "White";
-          } else if (color === "purple") {
-            return val.color === "Purple";
-          } else if (color === "red") {
-            return val.color === "Red";
-          } else if (color === "pink") {
-            return val.color === "Pink";
-          } else if (color === "blue") {
-            return val.color === "Blue";
-          } else return val;
-        })
-        //filter by height
-        .filter((val) => {
-          if (height === "groundCover") {
-            return val.height === "Ground cover";
-          } else if (height === "short") {
-            return val.height === "Short";
-          } else if (height === "medium") {
-            return val.height === "Medium";
-          } else if (height === "tall") {
-            return val.height === "Tall";
-          } else return val;
-        })
-        .map((val) => (
-          <PlantDisplay key={val.name} plant={val} />
-        ))}
+      <div className="flex-container">
+        {plantList
+          //filter by sun amount
+          .filter((val) => {
+            if (sunAmount === "fullSun") {
+              return val.sun === "Full sun";
+            } else if (sunAmount === "partSun") {
+              return val.sun === "Partial sun";
+            } else if (sunAmount === "fullShade") {
+              return val.sun === "Full shade";
+            } else return val;
+          })
+          //filter by soil type
+          .filter((val) => {
+            if (soilType === "wet") {
+              return val.soiltype === "Wet";
+            } else if (soilType === "medium") {
+              return val.soiltype === "Medium";
+            } else if (soilType === "dry") {
+              return val.soiltype === "Dry";
+            } else return val;
+          })
+          //filter by bloom time
+          .filter((val) => {
+            if (bloomTime === "spring") {
+              return val.bloomTime === "Spring";
+            } else if (bloomTime === "summer") {
+              return val.bloomTime === "Summer";
+            } else if (bloomTime === "fall") {
+              return val.bloomTime === "Fall";
+            } else return val;
+          })
+          //filter by flower color
+          .filter((val) => {
+            if (color === "yellow") {
+              return val.color === "Yellow";
+            } else if (color === "white") {
+              return val.color === "White";
+            } else if (color === "purple") {
+              return val.color === "Purple";
+            } else if (color === "red") {
+              return val.color === "Red";
+            } else if (color === "pink") {
+              return val.color === "Pink";
+            } else if (color === "blue") {
+              return val.color === "Blue";
+            } else return val;
+          })
+          //filter by height
+          .filter((val) => {
+            if (height === "groundCover") {
+              return val.height === "Ground cover";
+            } else if (height === "short") {
+              return val.height === "Short";
+            } else if (height === "medium") {
+              return val.height === "Medium";
+            } else if (height === "tall") {
+              return val.height === "Tall";
+            } else return val;
+          })
+          .map((val) => (
+            <PlantDisplay key={val.name} plant={val} />
+          ))}
+      </div>
     </div>
   );
 }
