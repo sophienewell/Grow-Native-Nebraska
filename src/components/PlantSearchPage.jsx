@@ -17,8 +17,8 @@ function PlantSearchPage() {
       bloomTime: "Spring",
       color: "Yellow",
       height: "Short",
-      sun: "Full sun",
-      soiltype: "Wet",
+      sun: ["Full sun", "Partial sun"],
+      soiltype: ["Wet", "Medium"],
     },
     {
       name: "Blue Wild Indigo",
@@ -175,7 +175,7 @@ function PlantSearchPage() {
       bloomTime: "Spring",
       color: "Red",
       height: "Medium",
-      sun: "Full sun",
+      sun: "Partial sun",
       soiltype: "Dry",
     },
     //Full shade, Wet soil
@@ -295,21 +295,21 @@ function PlantSearchPage() {
           //filter by sun amount
           .filter((val) => {
             if (sunAmount === "fullSun") {
-              return val.sun === "Full sun";
+              return val.sun.includes("Full sun");
             } else if (sunAmount === "partSun") {
-              return val.sun === "Partial sun";
+              return val.sun.includes("Partial sun");
             } else if (sunAmount === "fullShade") {
-              return val.sun === "Full shade";
+              return val.sun.includes("Full shade");
             } else return val;
           })
           //filter by soil type
           .filter((val) => {
             if (soilType === "wet") {
-              return val.soiltype === "Wet";
+              return val.soiltype.includes("Wet");
             } else if (soilType === "medium") {
-              return val.soiltype === "Medium";
+              return val.soiltype.includes("Medium");
             } else if (soilType === "dry") {
-              return val.soiltype === "Dry";
+              return val.soiltype.includes("Dry");
             } else return val;
           })
           //filter by bloom time
