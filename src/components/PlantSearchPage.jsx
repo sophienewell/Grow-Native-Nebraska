@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PlantDisplay from "./PlantDisplay";
 
 function PlantSearchPage() {
   //Plant data
@@ -290,7 +291,7 @@ function PlantSearchPage() {
           if (sunAmount === "fullSun") {
             return val.sun === "Full sun";
           } else if (sunAmount === "partSun") {
-            return val.sun === "Part sun";
+            return val.sun === "Partial sun";
           } else if (sunAmount === "fullShade") {
             return val.sun === "Full shade";
           } else return val;
@@ -343,10 +344,9 @@ function PlantSearchPage() {
             return val.height === "Tall";
           } else return val;
         })
-
-        .map((val) => {
-          console.log(val.name);
-        })}
+        .map((val) => (
+          <PlantDisplay key={val.name} plant={val} />
+        ))}
     </div>
   );
 }
