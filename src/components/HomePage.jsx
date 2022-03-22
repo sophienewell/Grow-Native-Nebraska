@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import MediaQuery from "react-responsive";
 import pink from "./images/pink.png";
 import yellowstripes from "./images/yellowstripes.png";
 import darkblue from "./images/darkblue.png";
@@ -6,6 +7,7 @@ import violet from "./images/violet.png";
 import salmon from "./images/salmon.png";
 import green from "./images/green.png";
 import black from "./images/black.png";
+import Menu from "./Menu";
 
 function HomePage() {
   const [offsetY, setOffsetY] = useState(0);
@@ -18,14 +20,22 @@ function HomePage() {
 
   return (
     <body className="site">
-      <header></header>
+      <Menu />
 
       <main className="main">
         <div className="container">
-          <div className="heading">
-            <h1>Grow Native Nebraska</h1>
-            <h2>Support your local environment. </h2>
-          </div>
+          <MediaQuery minWidth={800}>
+            <div className="heading-desktop">
+              <h1>Grow Native Nebraska</h1>
+              <h2>Support your local environment. </h2>
+            </div>
+          </MediaQuery>
+          <MediaQuery maxWidth={799}>
+            <div className="heading-mobile">
+              <h1>Grow Native Nebraska</h1>
+              <h2>Support your local environment. </h2>
+            </div>
+          </MediaQuery>
           <div className="grid-container" aria-hidden="true">
             <div className="grid" aria-hidden="true">
               <div className="grid__item grid__item--pink">
