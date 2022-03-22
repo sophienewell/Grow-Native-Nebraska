@@ -20,8 +20,6 @@ function HomePage() {
 
   return (
     <body className="site">
-      <Menu />
-
       <main className="main">
         <div className="container">
           <MediaQuery minWidth={800}>

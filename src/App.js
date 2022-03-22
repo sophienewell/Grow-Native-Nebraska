@@ -2,6 +2,9 @@ import "./App.css";
 import React from "react";
 import PlantSearchPage from "./components/PlantSearchPage";
 import HomePage from "./components/HomePage";
+import Menu from "./components/Menu";
+import TipsPage from "./components/TipsPage";
+import WhyGrowNativePage from "./components/WhyGrowNativePage";
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,9 +16,12 @@ function App() {
   return (
     <div>
       <Router>
+        <Menu />
         <Routes>
           <Route path="/home" element={<HomePage />} />
+          <Route path="/why" element={<WhyGrowNativePage />} />
           <Route path="/search" element={<PlantSearchPage />} />
+          <Route path="/tips" element={<TipsPage />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </Router>

@@ -1,9 +1,21 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+
 function Menu() {
   return (
     <nav className="flex-container bg-green padding-1 font-karla text-white">
-      <div className="center flex-item">Why grow native?</div>
-      <div className="center flex-item">Browse native plants</div>
-      <div className="center flex-item">Tips</div>
+      <NavLink className="center flex-item link" to="home">
+        Home
+      </NavLink>
+      <NavLink className="flex-item center link" to="why">
+        Why grow native?
+      </NavLink>
+      <NavLink className="center flex-item link" to="search">
+        Browse native plants
+      </NavLink>
+      <NavLink className="center flex-item link" to="tips">
+        Tips
+      </NavLink>
     </nav>
   );
 }
