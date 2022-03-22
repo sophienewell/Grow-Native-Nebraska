@@ -32,7 +32,7 @@ function HomePage() {
                 <img
                   src={pink}
                   alt="Pink Square"
-                  style={{ transform: `translateY(${offsetY * 0.4}px)` }}
+                  style={{ transform: `translateY(${offsetY * 0.5}px)` }}
                 />
               </div>
               <div className="grid__item grid__item--ystripes">
@@ -42,7 +42,7 @@ function HomePage() {
                 <img
                   src={darkblue}
                   alt="Dark Blue"
-                  style={{ transform: `translateY(${offsetY * 0.3}px)` }}
+                  style={{ transform: `translateY(${offsetY * 0.4}px)` }}
                 />
               </div>
               <div className="grid__item grid__item--violet">
@@ -56,7 +56,7 @@ function HomePage() {
                 <img
                   src={salmon}
                   alt="Salmon Flowers"
-                  style={{ transform: `translateY(${offsetY * 0.2}px)` }}
+                  style={{ transform: `translateY(${offsetY * 0.3}px)` }}
                 />
               </div>
               <div className="grid__item grid__item--green">
