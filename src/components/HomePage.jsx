@@ -22,6 +22,10 @@ function HomePage() {
 
       <main className="main">
         <div className="container">
+          <div className="heading">
+            <h1>Grow Native Nebraska</h1>
+            <h2>Support your local environment. </h2>
+          </div>
           <div className="grid-container" aria-hidden="true">
             <div className="grid" aria-hidden="true">
               <div className="grid__item grid__item--pink">

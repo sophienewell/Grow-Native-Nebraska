@@ -25,12 +25,12 @@
 
 .site {
   background: #e1decf;
-  height: 100%;
-  min-height: 120vh;
+  overflow: auto;
+  height: auto;
+  min-height: 150vh;
 }
 
 .main {
-  padding: 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,6 +53,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   position: relative;
+  margin-bottom: 10rem;
 }
 
 img {
@@ -100,4 +101,12 @@ img {
   grid-column: 7 / span 5;
   z-index: 6;
   grid-row: 3 / span 4;
+}
+.heading {
+  font-size: 1.2rem;
+  font-family: Questrial;
+  color: #262626;
+  position: relative;
+  top: 4rem;
+  left: 2rem;
 }
