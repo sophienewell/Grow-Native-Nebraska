@@ -3,7 +3,7 @@ import React from "react";
 import PlantSearchPage from "./components/PlantSearchPage";
 import HomePage from "./components/HomePage";
 import Menu from "./components/Menu";
-import TipsPage from "./components/TipsPage";
+import MailingListPage from "./components/MailingListPage";
 import WhyGrowNativePage from "./components/WhyGrowNativePage";
 import {
   BrowserRouter as Router,
@@ -21,7 +21,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/why" element={<WhyGrowNativePage />} />
           <Route path="/search" element={<PlantSearchPage />} />
-          <Route path="/tips" element={<TipsPage />} />
+          <Route path="/mailing-list" element={<MailingListPage />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </Router>
