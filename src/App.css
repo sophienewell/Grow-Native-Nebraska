@@ -7,8 +7,21 @@
   --green: #489132;
 }
 
+.line-height {
+  line-height: 1.7rem;
+}
+
 .center {
   text-align: center;
+}
+
+.r-align {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.text-lg {
+  font-size: 1.5rem;
 }
 
 .border {
@@ -50,6 +63,10 @@
 .link {
   color: white;
   text-decoration: none;
+}
+
+.link:hover {
+  font-weight: bold;
 }
 
 .site {
