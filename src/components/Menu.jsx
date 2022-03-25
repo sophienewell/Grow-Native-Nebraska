@@ -19,8 +19,8 @@ function Menu() {
         <NavLink className="center link padding-1" to="search">
           Browse native plants
         </NavLink>
-        <NavLink className="center link padding-1" to="tips">
-          Tips
+        <NavLink className="center link padding-1" to="mailinglist">
+          Mailing List
         </NavLink>
       </div>
     </nav>
