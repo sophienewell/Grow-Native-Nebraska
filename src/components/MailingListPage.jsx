@@ -1,4 +1,5 @@
 import React, { useRef, useState, useCallback } from "react";
+import useAPI from "../hooks/useAPI";
 
 function MailingListPage() {
   const emailInput = useRef(null);
