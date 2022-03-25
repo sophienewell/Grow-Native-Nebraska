@@ -21,7 +21,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/why" element={<WhyGrowNativePage />} />
           <Route path="/search" element={<PlantSearchPage />} />
-          <Route path="/mailing-list" element={<MailingListPage />} />
+          <Route path="/mailinglist" element={<MailingListPage />} />
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </Router>

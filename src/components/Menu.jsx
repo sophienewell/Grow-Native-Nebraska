@@ -19,7 +19,7 @@ function Menu() {
         <NavLink className="center link padding-1" to="search">
           Browse native plants
         </NavLink>
-        <NavLink className="center link padding-1" to="mailing-list">
+        <NavLink className="center link padding-1" to="mailinglist">
           Mailing List
         </NavLink>
       </div>

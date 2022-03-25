@@ -19,7 +19,7 @@ function HomePage() {
   }, []);
 
   return (
-    <body className="site">
+    <div className="site">
       <main className="main">
         <div className="container">
           <MediaQuery minWidth={800}>
@@ -81,7 +81,7 @@ function HomePage() {
           </div>
         </div>
       </main>
-    </body>
+    </div>
   );
 }
 
