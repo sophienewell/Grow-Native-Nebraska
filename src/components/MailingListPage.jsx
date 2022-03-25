@@ -12,6 +12,8 @@ function MailingListPage() {
     e.preventDefault();
 
     const email_address = emailInput.current.value;
+
+    setErr("");
     if (
       email_address.length < 6 ||
       email_address.length > 30 ||
@@ -29,11 +31,13 @@ function MailingListPage() {
     }
   });
   return (
-    <form className="center">
-      <label htmlFor="email">
-        Enter your email here to sign up for our mailing list
-      </label>
-      <br />
+    <form className="center site padding-1">
+      <div className="padding-1">
+        <label htmlFor="email">
+          <h4>Enter your email here to sign up for our mailing list</h4>
+        </label>
+      </div>
+
       <input
         id="email"
         type="text"
@@ -42,7 +46,7 @@ function MailingListPage() {
       />
       <br />
       <br />
-      <button onClick={handleSignup}>Add</button>
+      <button onClick={handleSignup}>Sign up</button>
       <h4>{err}</h4>
       <h4>{msg}</h4>
     </form>
