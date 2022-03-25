@@ -1,10 +1,10 @@
 const query = require("../mysql.conf");
 
-async function signup(res, emailAdd) {
+async function signup(res, email_address) {
   try {
     const [email] = await query(
       "SELECT * FROM users WHERE users.email_address = ?",
-      [emailAdd]
+      [email_address]
     );
     if (email) {
       return res.send({
@@ -13,13 +13,16 @@ async function signup(res, emailAdd) {
         error: "This email address is already signed up",
       });
     }
-    await query("INSERT INTO users (email_address) VALUES (?)", [emailAdd]);
+    await query("INSERT INTO users (email_address) VALUES (?)", [
+      email_address,
+    ]);
     return res.send({
       data: "Successfully signed up",
       success: true,
       error: null,
     });
   } catch (err) {
+    console.log(err);
     return res.send({
       data: null,
       success: false,

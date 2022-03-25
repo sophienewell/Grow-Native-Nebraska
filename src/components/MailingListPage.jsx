@@ -6,15 +6,15 @@ function MailingListPage() {
   const { signUp } = useAPI();
   const [err, setErr] = useState("");
   const handleSignup = useCallback(async () => {
-    const emailAdd = emailInput.current.value;
+    const email_address = emailInput.current.value;
     if (
-      emailAdd.length < 6 ||
-      emailAdd.length > 30 ||
-      !emailAdd.includes("@")
+      email_address.length < 6 ||
+      email_address.length > 30 ||
+      !email_address.includes("@")
     ) {
       return;
     }
-    const json = await signUp(emailAdd);
+    const json = await signUp(email_address);
     if (!json.success) {
       setErr(json.error);
     } else {
@@ -36,6 +36,7 @@ function MailingListPage() {
       <br />
       <br />
       <button onClick={handleSignup}>Add</button>
+      <h4>{err}</h4>
     </form>
   );
 }
