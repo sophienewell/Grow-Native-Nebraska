@@ -5,6 +5,7 @@
   --black: #262626;
   --violet: #8a7f9e;
   --green: #489132;
+  --yellow: #e0ca3c;
 }
 
 .line-height {
@@ -30,6 +31,14 @@
 
 .bg-green {
   background: var(--green);
+}
+
+.bg-white {
+  background-color: var(--offwhite);
+  z-index: 10;
+  position: relative;
+  margin-bottom: 2rem;
+  box-shadow: 1px 1px 7px rgb(78, 78, 75);
 }
 
 .text-white {
@@ -135,7 +144,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   position: relative;
-  margin-bottom: 15rem;
+  margin-bottom: 2rem;
 }
 
 img {
@@ -184,6 +193,16 @@ img {
   z-index: 6;
   grid-row: 3 / span 4;
 }
+
+.yellow-square {
+  height: 8rem;
+  width: 7rem;
+  background-color: var(--yellow);
+  position: relative;
+  left: 68%;
+  bottom: 25rem;
+}
+
 .heading-mobile {
   font-size: 1rem;
   font-family: Questrial;
