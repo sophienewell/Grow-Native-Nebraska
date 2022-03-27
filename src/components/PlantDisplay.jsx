@@ -4,24 +4,24 @@ import { faPlantWilt } from "@fortawesome/free-solid-svg-icons";
 
 function PlantDisplay({ plant }) {
   return (
-    <div className="center margin-20 flex-item padding-20 margin-10 bg-violet">
+    <div className="center padding-20 margin-10 bg-violet flex-item-box font-karla shadow">
       <h3>{plant.name}</h3>
       <FontAwesomeIcon
         icon={faPlantWilt}
         size="xl"
         style={{ color: `${plant.color}` }}
       />
-      <h5>
-        Color: {plant.color}
-        <br />
-        Height: {plant.height}
-        <br />
-        Bloom time: {plant.bloomTime}
-        <br />
-        Soil: {plant.soiltype}
-        <br />
-        Sun: {plant.sun}
-      </h5>
+      <br />
+      <br />
+      <b>Color:</b> {plant.color}
+      <br />
+      <b>Height:</b> {plant.height}
+      <br />
+      <b>Bloom time:</b> {plant.bloomTime}
+      <br />
+      <b>Soil:</b> {plant.soiltype}
+      <br />
+      <b>Sun:</b> {plant.sun}
     </div>
   );
 }
