@@ -17,6 +17,9 @@ function Menu() {
           <FontAwesomeIcon icon={faBars} size="xl" />
         </div>
         <div className="drop-content">
+          <NavLink className="center link-dropdown padding-1" to="home">
+            Home
+          </NavLink>
           <NavLink className="center link-dropdown padding-1" to="why">
             Why grow native?
           </NavLink>
