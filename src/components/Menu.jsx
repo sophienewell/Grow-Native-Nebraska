@@ -20,11 +20,8 @@ function Menu() {
           <NavLink className="center link-dropdown padding-1" to="home">
             Home
           </NavLink>
-          <NavLink className="center link-dropdown padding-1" to="why">
-            Why grow native?
-          </NavLink>
           <NavLink className="center link-dropdown padding-1" to="search">
-            Browse native plants
+            Search native plants
           </NavLink>
           <NavLink className="center link-dropdown padding-1" to="mailinglist">
             Mailing List
