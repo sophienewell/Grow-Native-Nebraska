@@ -95,6 +95,12 @@
   flex: 0 1 8rem;
 }
 
+@media screen and (max-width: 800px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
 .link {
   color: white;
   text-decoration: none;
