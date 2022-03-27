@@ -19,9 +19,9 @@ function PlantDisplay({ plant }) {
       <br />
       <b>Bloom time:</b> {plant.bloomTime}
       <br />
-      <b>Soil:</b> {plant.soiltype}
+      <b>Soil:</b> {plant.soiltype[0]} {plant.soiltype[1]} {plant.soiltype[2]}
       <br />
-      <b>Sun:</b> {plant.sun}
+      <b>Sun:</b> {plant.sun[0]} {plant.sun[1]} {plant.sun[2]}
     </div>
   );
 }

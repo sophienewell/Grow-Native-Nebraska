@@ -76,6 +76,9 @@
 .flex-container {
   display: flex;
   flex-direction: row;
+}
+
+.align-stretch {
   align-items: stretch;
 }
 
@@ -93,6 +96,8 @@
 
 .flex-item-box {
   flex: 0 1 8rem;
+  height: 20rem;
+  border: 5px solid white;
 }
 
 @media screen and (max-width: 800px) {
@@ -149,6 +154,13 @@
 .site {
   background: var(--offwhite);
   overflow: auto;
+}
+
+.min-100vh {
+  min-height: 100vh;
+}
+
+.min-150vh {
   height: auto;
   min-height: 150vh;
 }

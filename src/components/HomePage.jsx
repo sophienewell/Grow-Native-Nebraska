@@ -7,7 +7,6 @@ import violet from "./images/violet.png";
 import salmon from "./images/salmon.png";
 import green from "./images/green.png";
 import black from "./images/black.png";
-import Menu from "./Menu";
 
 function HomePage() {
   const [offsetY, setOffsetY] = useState(0);
@@ -19,7 +18,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="site">
+    <div className="site min-150vh">
       <main className="main">
         <div className="container">
           <MediaQuery minWidth={800}>

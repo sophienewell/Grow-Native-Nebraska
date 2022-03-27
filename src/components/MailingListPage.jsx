@@ -59,7 +59,7 @@ function MailingListPage() {
   });
 
   return (
-    <form className="center site padding-1">
+    <form className="center site min-100vh padding-1">
       <div className="padding-1">
         <label htmlFor="email">
           <h4>Enter your email here to sign up for our mailing list</h4>

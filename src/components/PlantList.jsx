@@ -30,7 +30,7 @@ export default [
     color: "Yellow",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Wet",
+    soiltype: ["Wet"],
   },
   {
     name: "Swamp Milkweed",
@@ -38,7 +38,7 @@ export default [
     color: "Pink",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Wet",
+    soiltype: ["Wet"],
   },
   {
     name: "Purple Coneflower",
@@ -86,7 +86,7 @@ export default [
     color: "White",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Wet",
+    soiltype: ["Wet"],
   },
   {
     name: "Cardinal Flower",
@@ -94,7 +94,7 @@ export default [
     color: "Red",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Wet",
+    soiltype: ["Wet"],
   },
   {
     name: "Joe Pye Weed",
@@ -102,7 +102,7 @@ export default [
     color: "Pink",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Wet",
+    soiltype: ["Wet"],
   },
   {
     name: "Stiff Goldenrod",
@@ -110,7 +110,7 @@ export default [
     color: "Yellow",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Wet",
+    soiltype: ["Wet"],
   },
   {
     name: "Sneezeweed",
@@ -118,7 +118,7 @@ export default [
     color: "Yellow",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Wet",
+    soiltype: ["Wet"],
   },
   {
     name: "New England Aster",
@@ -134,8 +134,8 @@ export default [
     bloomTime: "Spring",
     color: "Pink",
     height: "Short",
-    sun: "Full sun",
-    soiltype: "Medium",
+    sun: ["Full sun"],
+    soiltype: ["Medium"],
   },
   {
     name: "Ozark Bluestar",
@@ -143,7 +143,7 @@ export default [
     color: "White",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Medium",
+    soiltype: ["Medium"],
   },
   {
     name: "Foxglove Beardtongue",
@@ -151,14 +151,14 @@ export default [
     color: "White",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Medium",
+    soiltype: ["Medium"],
   },
   {
     name: "Showy Milkweed",
     bloomTime: "Summer",
     color: "Pink",
     height: "Medium",
-    sun: "Full sun",
+    sun: ["Full sun"],
     soiltype: ["Medium", "Dry"],
   },
   {
@@ -166,7 +166,7 @@ export default [
     bloomTime: "Summer",
     color: "White",
     height: "Short",
-    sun: "Full sun",
+    sun: ["Full sun"],
     soiltype: ["Medium", "Dry"],
   },
   {
@@ -174,7 +174,7 @@ export default [
     bloomTime: "Summer",
     color: "Orange",
     height: "Short",
-    sun: "Full sun",
+    sun: ["Full sun"],
     soiltype: ["Medium", "Dry"],
   },
   {
@@ -183,14 +183,14 @@ export default [
     color: "Purple",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Medium",
+    soiltype: ["Medium"],
   },
   {
     name: "Purple Prairie Clover",
     bloomTime: "Summer",
     color: "Purple",
     height: "Short",
-    sun: "Full sun",
+    sun: ["Full sun"],
     soiltype: ["Medium", "Dry"],
   },
   {
@@ -198,8 +198,8 @@ export default [
     bloomTime: "Summer",
     color: "Yellow",
     height: "Tall",
-    sun: "Full sun",
-    soiltype: "Medium",
+    sun: ["Full sun"],
+    soiltype: ["Medium"],
   },
   {
     name: "Purple Giant Hyssop",
@@ -207,14 +207,14 @@ export default [
     color: "White",
     height: "Tall",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Medium",
+    soiltype: ["Medium"],
   },
   {
     name: "Wild Petunia",
     bloomTime: "Summer",
     color: "Purple",
     height: "Short",
-    sun: "Full sun",
+    sun: ["Full sun"],
     soiltype: ["Medium", "Dry"],
   },
   {
@@ -223,7 +223,7 @@ export default [
     color: "Yellow",
     height: "Medium",
     sun: ["Full sun", "Partial sun"],
-    soiltype: "Medium",
+    soiltype: ["Medium"],
   },
   {
     name: "Pitcher Sage",
@@ -238,7 +238,7 @@ export default [
     bloomTime: "Fall",
     color: "Yellow",
     height: "Medium",
-    sun: "Full sun",
+    sun: ["Full sun"],
     soiltype: ["Medium", "Dry"],
   },
   {
@@ -246,8 +246,8 @@ export default [
     bloomTime: "Fall",
     color: "Yellow",
     height: "Medium",
-    sun: "Full sun",
-    soiltype: "Medium",
+    sun: ["Full sun"],
+    soiltype: ["Medium"],
   },
 
   //Full sun, dry soil
@@ -257,7 +257,7 @@ export default [
     color: "White",
     height: "Ground cover",
     sun: ["Full sun", "Partial Sun"],
-    soiltype: "Dry",
+    soiltype: ["Dry"],
   },
   {
     name: "White Wild Indigo",
@@ -265,7 +265,7 @@ export default [
     color: "White",
     height: "Medium",
     sun: ["Full sun", "Partial Sun"],
-    soiltype: "Dry",
+    soiltype: ["Dry"],
   },
   {
     name: "Large-flowered Beardtongue",
@@ -273,15 +273,15 @@ export default [
     color: "White",
     height: "Medium",
     sun: ["Full sun", "Partial Sun"],
-    soiltype: "Dry",
+    soiltype: ["Dry"],
   },
   {
     name: "Lance-leaf Coreopsis",
     bloomTime: "Summer",
     color: "Yellow",
     height: "Medium",
-    sun: "Full sun",
-    soiltype: "Dry",
+    sun: ["Full sun"],
+    soiltype: ["Dry"],
   },
   {
     name: "Pale Purple Coneflower",
@@ -289,15 +289,15 @@ export default [
     color: "Pink",
     height: "Medium",
     sun: ["Full sun", "Partial Sun"],
-    soiltype: "Dry",
+    soiltype: ["Dry"],
   },
   {
     name: "Purple Poppy Mallow",
     bloomTime: "Summer",
     color: "Purple",
     height: "Grounc cover",
-    sun: "Full sun",
-    soiltype: "Dry",
+    sun: ["Full sun"],
+    soiltype: ["Dry"],
   },
   {
     name: "Button Blazing Star",
@@ -305,7 +305,7 @@ export default [
     color: "Purple",
     height: "Medium",
     sun: ["Full sun", "Partial Sun"],
-    soiltype: "Dry",
+    soiltype: ["Dry"],
   },
   {
     name: "Hoary Vervain",
@@ -313,23 +313,23 @@ export default [
     color: "Purple",
     height: "Short",
     sun: ["Full sun", "Partial Sun"],
-    soiltype: "Dry",
+    soiltype: ["Dry"],
   },
   {
     name: "Aromatic Aster",
     bloomTime: "Fall",
     color: "Purple",
     height: "Medium",
-    sun: "Full sun",
-    soiltype: "Dry",
+    sun: ["Full sun"],
+    soiltype: ["Dry"],
   },
   {
     name: "Showy Sunflower",
     bloomTime: "Fall",
     color: "Yellow",
     height: "Tall",
-    sun: "Full sun",
-    soiltype: "Dry",
+    sun: ["Full sun"],
+    soiltype: ["Dry"],
   },
   //Partial sun, Wet soil
   {
@@ -353,8 +353,8 @@ export default [
     bloomTime: "Fall",
     color: "Blue",
     height: "Short",
-    sun: "Partial sun",
-    soiltype: "Wet",
+    sun: ["Partial sun"],
+    soiltype: ["Wet"],
   },
   //Partial sun, Medium soil
   {
@@ -370,7 +370,7 @@ export default [
     bloomTime: "Summer",
     color: "Pink",
     height: "Medium",
-    sun: "Partial sun",
+    sun: ["Partial sun"],
     soiltype: ["Medium", "Dry"],
   },
   {
@@ -379,7 +379,7 @@ export default [
     color: "Purple",
     height: "Short",
     sun: ["Partial sun", "Full shade"],
-    soiltype: "Medium",
+    soiltype: ["Medium"],
   },
   {
     name: "Wild Blue Phlox",
@@ -410,8 +410,8 @@ export default [
     bloomTime: "Fall",
     color: "Blue",
     height: "Medium",
-    sun: "Partial sun",
-    soiltype: "Medium",
+    sun: ["Partial sun"],
+    soiltype: ["Medium"],
   },
   //Partial sun, Dry soil
   {
@@ -427,16 +427,16 @@ export default [
     bloomTime: "Spring",
     color: "Pink",
     height: "Short",
-    sun: "Partial sun",
-    soiltype: "Dry",
+    sun: ["Partial sun"],
+    soiltype: ["Dry"],
   },
   {
     name: "Sky Blue Aster",
     bloomTime: "Fall",
     color: "Blue",
     height: "Medium",
-    sun: "Partial sun",
-    soiltype: "Dry",
+    sun: ["Partial sun"],
+    soiltype: ["Dry"],
   },
   //Full shade, Wet soil
   {
@@ -444,7 +444,7 @@ export default [
     bloomTime: "Spring",
     color: "Blue",
     height: "Short",
-    sun: "Full shade",
+    sun: ["Full shade"],
     soiltype: ["Wet", "Medium"],
   },
   {
@@ -452,7 +452,7 @@ export default [
     bloomTime: "Summer",
     color: "White",
     height: "Short",
-    sun: "Full shade",
+    sun: ["Full shade"],
     soiltype: ["Wet", "Medium"],
   },
   {
@@ -460,7 +460,7 @@ export default [
     bloomTime: "Summer",
     color: "Pink",
     height: "Tall",
-    sun: "Full shade",
+    sun: ["Full shade"],
     soiltype: ["Wet", "Medium", "Dry"],
   },
   {
@@ -468,7 +468,7 @@ export default [
     bloomTime: "Summer",
     color: "Yellow",
     height: "Tall",
-    sun: "Full shade",
+    sun: ["Full shade"],
     soiltype: ["Wet", "Medium"],
   },
   {
@@ -476,7 +476,7 @@ export default [
     bloomTime: "Summer",
     color: "White",
     height: "Medium",
-    sun: "Full shade",
+    sun: ["Full shade"],
     soiltype: ["Wet", "Medium", "Dry"],
   },
   {
@@ -484,7 +484,7 @@ export default [
     bloomTime: "Summer",
     color: "Yellow",
     height: "Tall",
-    sun: "Full shade",
+    sun: ["Full shade"],
     soiltype: ["Wet", "Medium"],
   },
   //Full shade, medium soil
@@ -493,7 +493,7 @@ export default [
     bloomTime: "Spring",
     color: "White",
     height: "Medium",
-    sun: "Full shade",
+    sun: ["Full shade"],
     soiltype: ["Medium", "Dry"],
   },
   //Full shade, dry soil
@@ -502,7 +502,7 @@ export default [
     bloomTime: "Spring",
     color: "White",
     height: "Short",
-    sun: "Full shade",
+    sun: ["Full shade"],
     soiltype: ["Dry", "Medium", "Wet"],
   },
 ];
