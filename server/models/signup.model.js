@@ -31,4 +31,35 @@ async function signup(res, email_address) {
   }
 }
 
-module.exports = { signup };
+async function unsubscribe(res, email_address) {
+  try {
+    const [email] = await query(
+      "SELECT * FROM users WHERE users.email_address = ?",
+      [email_address]
+    );
+    if (!email) {
+      return res.send({
+        data: null,
+        success: false,
+        error: "Cannot find email address",
+      });
+    }
+    await query("DELETE * FROM users WHERE users.email_address = ?", [
+      email_address,
+    ]);
+    return res.send({
+      data: "Successfully unsubsribed",
+      success: true,
+      error: null,
+    });
+  } catch (err) {
+    console.log(err);
+    return res.send({
+      data: null,
+      success: false,
+      error: "Something went wrong, please try again later.",
+    });
+  }
+}
+
+module.exports = { signup, unsubscribe };
