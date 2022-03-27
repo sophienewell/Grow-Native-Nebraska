@@ -78,7 +78,7 @@ function HomePage() {
                 />
               </div>
             </div>
-            <div className="bg-white padding-20">
+            <div className="text-box padding-20">
               <p>
                 <b>
                   Native plants are those that occur naturally in a region in
