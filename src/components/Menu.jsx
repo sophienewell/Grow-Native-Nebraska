@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSeedling } from "@fortawesome/free-solid-svg-icons";
+import { faSeedling, faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Menu() {
   return (
@@ -12,16 +12,21 @@ function Menu() {
           Grow Native Nebraska
         </NavLink>
       </div>
-      <div className="r-align flex container line-height">
-        <NavLink className="center link padding-1" to="why">
-          Why grow native?
-        </NavLink>
-        <NavLink className="center link padding-1" to="search">
-          Browse native plants
-        </NavLink>
-        <NavLink className="center link padding-1" to="mailinglist">
-          Mailing List
-        </NavLink>
+      <div className="r-align dropdown">
+        <div className="drop-button">
+          <FontAwesomeIcon icon={faBars} size="xl" />
+        </div>
+        <div className="drop-content">
+          <NavLink className="center link-dropdown padding-1" to="why">
+            Why grow native?
+          </NavLink>
+          <NavLink className="center link-dropdown padding-1" to="search">
+            Browse native plants
+          </NavLink>
+          <NavLink className="center link-dropdown padding-1" to="mailinglist">
+            Mailing List
+          </NavLink>
+        </div>
       </div>
     </nav>
   );
