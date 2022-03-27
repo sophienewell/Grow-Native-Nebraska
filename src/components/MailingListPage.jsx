@@ -7,7 +7,9 @@ function MailingListPage() {
   const { signUp } = useAPI();
   const { unsubscribe } = useAPI();
   const [err, setErr] = useState("");
+  const [unsubErr, setUnsubErr] = useState("");
   const [msg, setMsg] = useState("");
+  const [unsubMsg, setUnsubMsg] = useState("");
 
   const handleSignup = useCallback(async (e) => {
     //prevents page from refreshing so message/error does not disappear
@@ -38,20 +40,20 @@ function MailingListPage() {
 
     const email_address = unsubscribeInput.current.value;
 
-    setErr("");
+    setUnsubErr("");
     if (
       email_address.length < 6 ||
       email_address.length > 30 ||
       !email_address.includes("@")
     ) {
-      setErr("Invalid email address");
+      setUnsubErr("Invalid email address");
       return;
     }
     const json = await unsubscribe(email_address);
     if (!json.success) {
-      setErr(json.error);
+      setUnsubErr(json.error);
     } else {
-      setMsg("You have been unsubscribed");
+      setUnsubMsg("You have been unsubscribed");
       return;
     }
   });
@@ -68,7 +70,7 @@ function MailingListPage() {
         id="email"
         type="text"
         ref={emailInput}
-        placeholder="somebody@something.com"
+        placeholder="someone@example.com"
       />
       <br />
       <br />
@@ -86,13 +88,13 @@ function MailingListPage() {
         id="unsubscribe"
         type="text"
         ref={unsubscribeInput}
-        placeholder="somebody@something.com"
+        placeholder="someone@example.com"
       />
       <br />
       <br />
       <button onClick={handleUnsubscribe}>Unsubscribe</button>
-      <h4>{err}</h4>
-      <h4>{msg}</h4>
+      <h4>{unsubErr}</h4>
+      <h4>{unsubMsg}</h4>
     </form>
   );
 }

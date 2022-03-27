@@ -44,11 +44,11 @@ async function unsubscribe(res, email_address) {
         error: "Cannot find email address",
       });
     }
-    await query("DELETE * FROM users WHERE users.email_address = ?", [
+    await query("DELETE FROM users WHERE users.email_address = ?", [
       email_address,
     ]);
     return res.send({
-      data: "Successfully unsubsribed",
+      data: "Successfully unsubscribed",
       success: true,
       error: null,
     });
