@@ -11,7 +11,7 @@ function PlantSearchPage() {
   const [height, setHeight] = useState("all");
 
   return (
-    <div>
+    <div className="site">
       <h5 className="center">
         Use the filters to find native plants that are suitable for your garden
       </h5>

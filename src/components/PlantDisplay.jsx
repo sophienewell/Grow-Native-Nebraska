@@ -1,9 +1,16 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlantWilt } from "@fortawesome/free-solid-svg-icons";
 
 function PlantDisplay({ plant }) {
   return (
-    <div className="center border margin-20 flex-item padding-20 margin-10">
+    <div className="center margin-20 flex-item padding-20 margin-10 bg-violet">
       <h3>{plant.name}</h3>
+      <FontAwesomeIcon
+        icon={faPlantWilt}
+        size="xl"
+        style={{ color: `${plant.color}` }}
+      />
       <h5>
         Color: {plant.color}
         <br />

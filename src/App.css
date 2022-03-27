@@ -33,6 +33,10 @@
   background: var(--green);
 }
 
+.bg-violet {
+  background-color: rgb(236, 236, 231);
+}
+
 .text-box {
   background-color: rgb(236, 236, 231);
   z-index: 10;
