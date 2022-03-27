@@ -25,7 +25,20 @@ function useAPI() {
     [makeAPICall]
   );
 
-  return { signUp };
+  const unsubscribe = useCallback(
+    async (email_address) => {
+      return await makeAPICall("/api/users/unsubscribe", {
+        method: "DELETE",
+        body: JSON.stringify({ email_address }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    },
+    [makeAPICall]
+  );
+
+  return { signUp, unsubscribe };
 }
 
 export default useAPI;
